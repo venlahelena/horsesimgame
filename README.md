@@ -1,1 +1,1 @@
-# Horse sim Game Concept
+# Horse Sim Game Concept

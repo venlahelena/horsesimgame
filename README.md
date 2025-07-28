@@ -6,7 +6,7 @@ A browser-based horse breeding and care simulation game built with React (fronte
 
 ## Project Overview
 
-HorseSim is a browser-based portfolio project simulating realistic horse breeding, care, and stable management. Players manage horses, breed them with genetic traits, care for their health, and complete quests—all within their web browser.
+HorseSim is a browser-based portfolio project simulating realistic horse breeding, care, and stable management. Players manage horses, breed them with genetic traits, care for their health, and complete quests.
 
 ---
 

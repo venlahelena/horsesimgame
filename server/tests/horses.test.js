@@ -34,14 +34,15 @@ describe('Horse API Extended Tests', () => {
   });
 
   test('PUT /api/horses/:id - should update horse with valid data', async () => {
-    const updateData = { age: 7, 'stats.speed': 85 };
-    const res = await request(app)
-      .put(`/api/horses/${horseId}`)
-      .send(updateData);
-    expect(res.statusCode).toBe(200);
-    expect(res.body.age).toBe(7);
-    expect(res.body.stats.speed).toBe(85);
+  const updateData = { age: 7, stats: { speed: 85 } };
+  const res = await request(app)
+    .put(`/api/horses/${horseId}`)
+    .send(updateData);
+  expect(res.statusCode).toBe(200);
+  expect(res.body.age).toBe(7);
+  expect(res.body.stats.speed).toBe(85);
   });
+
 
   test('PUT /api/horses/:id - should return 400 if invalid data', async () => {
     const invalidData = { age: -1 }; // Negative age invalid

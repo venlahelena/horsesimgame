@@ -1,0 +1,35 @@
+.stable-corridor {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 2rem;
+  background: #e8e1d3; /* soft stable wall tone */
+}
+
+.stable-stall {
+  flex: 0 0 15rem;
+  height: 20rem;
+  background: #ffff;
+  background-size: cover;
+  border: 2px solid #9b7d5c;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.stable-stall:hover {
+  transform: scale(1.02);
+}
+
+.stall-sign {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255,255,255,0.8);
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}

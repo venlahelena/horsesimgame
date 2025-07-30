@@ -47,3 +47,5 @@ export async function fetchHorses(params: Record<string, any> = {}): Promise<Fet
 
   return res.json();
 }
+
+export { API_BASE };

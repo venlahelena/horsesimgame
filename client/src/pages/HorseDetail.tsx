@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useHorse } from "../../../hooks/useHorses";
+import { useHorse } from "../hooks/useHorses";
 
 export default function HorseDetail() {
   const { id } = useParams<{ id: string }>();

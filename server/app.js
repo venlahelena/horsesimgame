@@ -20,4 +20,7 @@ app.get('/', (req, res) => res.send('API running'));
 const horseRoutes = require('./routes/horses');
 app.use('/api/horses', horseRoutes);
 
+const marketRoutes = require('./routes/market');
+app.use('/api/market', marketRoutes);
+
 module.exports = app;

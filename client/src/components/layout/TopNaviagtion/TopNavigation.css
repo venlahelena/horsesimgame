@@ -1,0 +1,58 @@
+/* Main page background */
+body {
+  background-color: #A3B18A; /* sage green */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px; /* enough top padding so nav doesn't overlap content */
+}
+
+/* Nav wrapper fixed at top and full width */
+.top-nav {
+  position: fixed;
+  top: 20px; /* small gap from the top of the screen */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* The rounded container holding the links */
+.nav-container {
+  pointer-events: auto; /* enable click inside container */
+  display: inline-flex;
+  background-color: #FFF8E7; /* creamy off-white, stands out from sage */
+  color: #7B4B2A; /* rich chestnut brown text */
+  font-weight: 600;
+  font-size: 1.125rem;
+  user-select: none;
+  border-radius: 30px; /* pill shape */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Each link */
+.nav-link {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #7B4B2A;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #D98C45; /* warm muted orange */
+  color: white;
+}
+
+/* Separator vertical bar */
+.separator {
+  border-left: 1px solid #7B4B2A;
+  height: 24px;
+  align-self: center;
+  margin: 0; /* no extra spacing */
+}

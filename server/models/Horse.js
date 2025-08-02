@@ -14,6 +14,9 @@ const horseSchema = new mongoose.Schema({
     coatColor: { type: String, required: true },
     markings: { type: String },
   },
+  forSale: { type: Boolean, default: false },
+  price: { type: Number, min: 0 },
+  owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
 
 module.exports = mongoose.model('Horse', horseSchema);

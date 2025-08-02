@@ -1,40 +1,66 @@
-# Horse Sim Game Concept
+# Stabelworks Browser-Based Horse Breeding and Care Simulation Game
 
-A browser-based horse breeding and care simulation game built with React (frontend), Node.js + Express (backend), and MongoDB.
-
----
-
-## Project Overview
-
-HorseSim is a browser-based portfolio project simulating realistic horse breeding, care, and stable management. Players manage horses, breed them with genetic traits, care for their health, and complete quests.
+HorseSim is a realistic horse breeding and stable management simulation game built with React, Node.js, and MongoDB. Manage your horses’ genetics, health, training, and career progression while completing engaging quests in a rich stable environment.
 
 ---
 
-## Current Status
+## 🚀 Project Overview
+
+HorseSim is a portfolio project designed to simulate the complex yet rewarding experience of horse breeding, care, and stable management — all in your browser. Players can manage multiple horses, breed them to pass on desirable traits, maintain their health and mood, and compete in quests that guide their journey from novice breeder to accomplished stable manager.
+
+---
+
+## 📌 Current Status
 
 - React frontend setup with Vite  
-- Node.js backend with Express server running  
-- MongoDB connection planned via MongoDB Atlas  
+- Backend running with Node.js and Express  
+- MongoDB Atlas planned for cloud database hosting  
+- JWT-based user authentication in development  
 - Basic project structure and GitHub repository initialized  
+- Tailwind CSS styling planned  
 
 ---
 
-## Planned Features
+## 🌟 Planned Features
 
-- **User Authentication** (JWT-based sign-up/login/logout)  
-- **Horse Management**: Create, view, update, and delete horses  
-- **Detailed Horse Care**: Feeding, grooming, vet checks, seasonal effects  
-- **Breeding System**: Genetic inheritance, breeding choices, bloodline prestige  
-- **Quest System**: Player-guided quests to motivate progress and learning  
-- **Stable Management**: Staff hiring, budgeting, facility upgrades  
-- **Roleplay Mode**: Career progression from novice breeder to stable manager
+### User System  
+- JWT-based authentication (sign-up, login, logout)  
+- Player profiles with avatar and stable information  
+
+### Horse Management  
+- Create, view, update, and delete horses  
+- Detailed horse care: feeding, grooming, vet checks, seasonal effects  
+- Health and mood management  
+
+### Breeding System  
+- Genetic inheritance with Mendelian traits for coat colors and stats  
+- Bloodline prestige and strategic breeding decisions  
+- Breeding cooldowns and pregnancy durations  
+
+### Stable Management  
+- Hire staff and manage budgets  
+- Upgrade facilities to improve horse care and training  
+
+### Quest & Progression System  
+- Tutorial and story-driven quests to guide gameplay  
+- Daily and weekly challenges for engagement  
+- Career progression from novice breeder to stable manager  
+
+### Economy & Competitions (Future)  
+- In-game currency earned through competitions and sales  
+- Horse equipment and stable upgrades  
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- Frontend: React, Vite, Tailwind CSS (planned)  
-- Backend: Node.js, Express  
-- Database: MongoDB Atlas (cloud-hosted)  
-- Authentication: JWT  
-- Version Control: Git + GitHub  
+- **Frontend:** React + Vite for a fast and reactive UI  
+- **Styling:** Tailwind CSS (planned) for utility-first, responsive design  
+- **Backend:** Node.js + Express for RESTful API  
+- **Database:** MongoDB Atlas for scalable, cloud-hosted NoSQL storage  
+- **Authentication:** JWT for secure user session management  
+- **Version Control:** Git + GitHub for source control and collaboration  
+
+---
+
+Thank you for checking out Stabelworks! 🐎✨

@@ -55,6 +55,7 @@ router.get('/', async (req, res) => {
       data: horses,
     });
   } catch (err) {
+    console.error(err);
     res.status(500).json({ message: err.message });
   }
 });
@@ -87,6 +88,7 @@ router.post('/', validateHorsePost, async (req, res) => {
     const savedHorse = await newHorse.save();
     res.status(201).json(savedHorse);
   } catch (err) {
+    console.error(err);
     res.status(400).json({ message: err.message });
   }
 });
@@ -119,6 +121,7 @@ router.put('/:id', validateHorsePut, async (req, res) => {
     if (!updatedHorse) return res.status(404).json({ message: 'Horse not found' });
     res.json(updatedHorse);
   } catch (err) {
+    console.error(err);
     res.status(400).json({ message: err.message });
   }
 });
@@ -130,6 +133,7 @@ router.delete('/:id', async (req, res) => {
     if (!deletedHorse) return res.status(404).json({ message: 'Horse not found' });
     res.status(204).send();
   } catch (err) {
+    console.error(err);
     res.status(500).json({ message: err.message });
   }
 });

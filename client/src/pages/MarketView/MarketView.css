@@ -1,24 +1,8 @@
 .market-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
   gap: 2rem;
   padding: 2rem;
-}
-
-.horse-card {
-  flex: 0 0 15rem;
-  height: 20rem;
-  background: #ffff;
-  border: 1px solid #818cf8;
-  border-radius: 0.5rem;
-  position: relative;
-  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .horse-card:hover {

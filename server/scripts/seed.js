@@ -68,6 +68,7 @@ const seed = async () => {
     await Horse.insertMany([...userHorses, ...marketHorses]);
 
     console.log('Database seeded!');
+    console.log("Seeded user ID:", user._id.toString());
     process.exit(0);
   } catch (err) {
     console.error('Seed failed:', err);

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useHorseList } from "../../hooks/useHorseList";
+import HorseCard from "../../components/shared/HorseCard/HorseCard";
 import "./StableView.css";
 
 const MAX_STABLE_SIZE = 10;
@@ -23,9 +24,7 @@ export default function StableView() {
             key={horse._id}
             className="stable-stall"
           >
-            <div className="stall-sign">
-              {horse.name} – Age {horse.age}
-            </div>
+            <HorseCard horse={horse} />
           </Link>
         ))}
 

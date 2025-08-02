@@ -1,25 +1,25 @@
 .stable-corridor {
   display: flex;
   overflow-x: auto;
-  gap: 2rem;
+  gap: 3.5rem;
   padding: 2rem;
-  background: #e8e1d3; /* soft stable wall tone */
 }
 
 .stable-stall {
-  flex: 0 0 15rem;
-  height: 20rem;
-  background: #ffff;
-  background-size: cover;
-  border: 2px solid #9b7d5c;
-  border-radius: 0.5rem;
-  position: relative;
-  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
+  min-width: 15rem;
+  min-height: 20rem;
+  display: flex;
+  align-items: stretch;
 }
 
-.stable-stall:hover {
-  transform: scale(1.02);
+.stable-stall.empty {
+  background: #f8f8f8;
+  border: 2px dashed #ccc;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stall-sign {

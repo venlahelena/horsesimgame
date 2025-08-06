@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -17,6 +16,9 @@ app.use(express.json());
 app.get('/', (req, res) => res.send('API running'));
 
 // Routes
+const authRoutes = require('./routes/auth');
+app.use('/api/auth', authRoutes); // ← This was missing
+
 const horseRoutes = require('./routes/horses');
 app.use('/api/horses', horseRoutes);
 

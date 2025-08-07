@@ -56,3 +56,9 @@ body {
   align-self: center;
   margin: 0; /* no extra spacing */
 }
+
+/* Add this to visually show the active tab */
+.nav-link.active {
+  background-color: #D98C45;
+  color: white;
+}

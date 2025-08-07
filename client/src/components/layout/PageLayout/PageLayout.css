@@ -1,0 +1,21 @@
+.page-layout {
+  height: calc(100vh - 100px); /* full height minus nav */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.page-upper {
+  flex: 2;
+  overflow-y: auto;
+  background-color: #fff8e7;
+}
+
+.page-lower {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+  background-color: #fdf6e3;
+}
